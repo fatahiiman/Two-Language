@@ -40,3 +40,42 @@ export const IconNavStyled = styled.div`
         color:#fff;
     }
 `
+export const MainSectionStyled = styled.div`
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -30%) }; 
+`
+export const FlexColumn = styled.div`
+maxWidth: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        color:#fff;
+        margin-button: 3rem;
+        text-align:center;
+
+    }
+    h3{
+        color:#fff;
+        margin-button:2rem;
+        text-align:center;
+
+    }
+`
+export const ButtonStyled = styled.button`
+
+    maxWidth: 64px;
+    maxHeight: 1rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px;
+    border-width: 4px;
+    border-color: #fff;
+`
+
+
