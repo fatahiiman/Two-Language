@@ -1,12 +1,12 @@
 import { Chip } from '@mui/material';
 import { StyledNavBar, IconNavStyled } from "../commons/homePageStyled";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import LanguageIcon from '@mui/icons-material/Language';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import IconButton from '@mui/material/IconButton';
 import SvgIcon from '@mui/material/SvgIcon';
+import SelectLanguage from './selectLanguage';
 
-const NavBar = () => {
+const NavBar = ({ discuss }) => {
     return (
         <StyledNavBar>
             <div>
@@ -14,13 +14,13 @@ const NavBar = () => {
                     <p>12345</p>
                     <LocalPhoneIcon color='primary' />
                 </IconNavStyled>
-                <p>"this_is_an_example"</p>
+                <p>{discuss}</p>
             </div>
             <div>
-                <IconNavStyled>
-                    <p>EN</p>
-                    <LanguageIcon color='primary' />
-                </IconNavStyled>
+
+
+                <SelectLanguage></SelectLanguage>
+
                 <ShoppingBasketIcon color='primary' />
             </div>
         </StyledNavBar>
